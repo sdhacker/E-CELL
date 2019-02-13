@@ -90,8 +90,8 @@ Version      : 1.0
 
         /*START CONTACT MAP JS*/
         var contact = {
-            "lat": "40.7127837",
-            "lon": "-74.00594130000002"
+            "lat": "26.471436",
+            "lon": "73.113401"
         }; //Change a map coordinate here!
         try {
             $('.map').gmap3({
@@ -99,7 +99,7 @@ Version      : 1.0
                 latLng: [contact.lat, contact.lon],
                 map: {
                     center: [contact.lat, contact.lon],
-                    zoom: 5
+                    zoom: 7
                 },
             }, {
                 action: 'setOptions',
