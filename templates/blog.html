@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-cell</title>
+</head>
+<body>
+<h1>BLOG HOME</h1>
+{% for blog in articles %}
+    <h2><a href="{% url 'blog_body' slug=blog.slug %}">{{ blog.title }}</a> </h2>
+    <h3>{{ blog.date }}</h3>
+    <p>{{ blog.snippet }}</p>
+{% endfor %}
+</body>
+</html>
