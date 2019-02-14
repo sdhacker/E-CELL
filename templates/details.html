@@ -1,10 +1,127 @@
+{% load static from staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/logo .ico' %}" />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.transitions.css' %}" rel="stylesheet">
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
     <title>{{ object.title }}</title>
 </head>
 <body>
-    {{ object.body }}
+
+<section class="great-started section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="great-started-text text-center">
+                        <h2>{{ object.title }}</h2>
+                        <h2>{{ object.date }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section id="about" class="about-us-area section-padding">
+    <div class="container">
+        <img src="{% static 'img/bg/IMG_9966.JPG' %}" width="400px" height="300px" style="margin-top: 20px;margin-left: 20px;margin-bottom: 20px" class="img-responsive" alt="portfolio" align="right" />
+     <p style="font-size: large"> {{ object.body }}</p>
+    </div>
+ </section>
+
+ <div class="footer-area footer-bg section-padding">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <!-- START SINGLE WIDGET -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-logo">about <span>E-CELL IITJ</span></h4>
+                            <p>We, here at Entrepreneurship-Cell IIT Jodhpur, share a common belief that revolutionary changes can be
+                                brought about in India by encouraging youth to think and perform past the conventional protocols.</p>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/iitjecell/"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/ecell_iitj/?hl=en"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SINGLE WIDGET -->
+                    <!-- START SINGLE WIDGET -->
+
+                    <!-- END SINGLE WIDGET -->
+                    <!-- START SINGLE WIDGET -->
+                    <!-- END SINGLE WIDGET -->
+                    <!-- START SINGLE WIDGET -->
+                    <div class="col-md-3 col-sm-6" style="float: right">
+                        <div class="footer-widget">
+                            <h4 class="footer-logo">Contact Info</h4>
+                            <div class="footer-contact">
+                                <!-- START SINGLE CONTACT INFO -->
+                                <div class="single-contact-info">
+                                    <i class="fa fa-map-marker"></i>
+                                    <h6>address</h6>
+                                    <p>IIT Jodhpur,NH-65, Jodhpur</p>
+                                </div>
+                                <!-- START SINGLE CONTACT INFO -->
+                                <!-- END SINGLE CONTACT INFO -->
+                                <div class="single-contact-info">
+                                    <i class="fa fa-phone"></i>
+                                    <h6>phone</h6>
+                                    <p>+91 9521197358</p>
+                                </div>
+                                <!-- END SINGLE CONTACT INFO -->
+                                <!-- START SINGLE CONTACT INFO -->
+                                <div class="single-contact-info">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <h6>Email</h6>
+                                    <p>ecell@iitj.ac.in</p>
+                                </div>
+                                <!-- END SINGLE CONTACT INFO -->
+                                <div class="single-contact-info">
+                                    <i class="fa fa-globe"></i>
+                                    <h6>website</h6>
+                                    <p>www.ecell-iitj.com</p>
+                                </div>
+                                <!-- END SINGLE CONTACT INFO -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SINGLE WIDGET -->
+                </div>
+                <!-- END ROW -->
+            </div>
+            <!-- END CONTAINER -->
+        </div>
+        <!-- END FOOTER TOP -->
+    </div>
+    <!-- END FOOTER AREA -->
+    <!-- START FOOTER BOTTOM AREA -->
+    <footer class="footer-bottom-area footer-bottom-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-text text-center">
+                        <p class="text-muted"><span>Entrepreneurship CELL</span>  - IIT JODHPUR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>
