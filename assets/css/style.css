@@ -1161,3 +1161,70 @@ ul.contact-list i {
     color: #0099cc;
 }
 /*15.END FOOTER DESIGN AREA*/
+
+
+/*Gallery design*/
+.tab {
+  /*overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;*/
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  /*background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;*/
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #0099cc;
+    margin: 0 2px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #0099cc;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background: #0099cc;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
