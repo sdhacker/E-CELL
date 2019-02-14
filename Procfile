@@ -1,2 +1,2 @@
 web: gunicorn E-CELL.wsgi
-heroku config:set DISABLE_COLLECTSTATIC=1
+web: target/universal/stage/bin/my-app -Dhttp.port=${PORT}
