@@ -35,7 +35,7 @@
  <section id="about" class="about-us-area section-padding">
     <div class="container">
         <img src="{% static 'img/bg/IMG_9966.JPG' %}" width="400px" height="300px" style="margin-top: 20px;margin-left: 20px;margin-bottom: 20px" class="img-responsive" alt="portfolio" align="right" />
-     <p style="font-size: large"> {{ object.body }}</p>
+     <p style="font-size: large"> {{ object.body | safe}}</p>
     </div>
  </section>
 
