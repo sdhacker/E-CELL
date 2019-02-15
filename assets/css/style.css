@@ -83,7 +83,7 @@ fieldset {
 }
 .status,
 .status-mes {
-    background-image: url(/img/Ajax-loader.gif);
+    background-image: url(img/Ajax-loader.gif);
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
@@ -513,7 +513,7 @@ a.about-btn:hover {
     font-size: 16px;
 }
 .great-started {
-    background: rgba(0, 0, 0, 0) url("/img/bg/get-started-bg.jpg") repeat fixed 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("img/bg/get-started-bg.jpg") repeat fixed 0 0 / cover;
     position: relative;
     z-index: 1;
 }
@@ -705,7 +705,7 @@ ul.work li:hover {
 /*10.START TESTIMONIAL DESIGN AREA*/
 
 .what-client-say-area {
-    background: rgba(0, 0, 0, 0) url("/img/bg/testimonial-bg.jpg") repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("img/bg/testimonial-bg.jpg") repeat scroll 0 0 / cover;
     position: relative;
     z-index: 1;
     background-attachment: fixed;
